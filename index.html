@@ -12,33 +12,105 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- tailwind config -->
   <script>
     tailwind.config = {
-        theme: {
-            extend: {
-                colors: {
-                    primary: 'rgb(139, 195, 74)',
-                    secondary: 'rgb(17, 17, 17)',
-                    body: 'rgb(248, 246, 243)',
-                    accent: 'rgb(106, 151, 57)',
-                    body_neutral: 'rgb(51, 51, 51)',
-                },
-                fontFamily: {
-                  Manrope: 'Manrope',
-                },
-                backgroundImage: {
-                    leaf: "url('./images/leaf01.png')",
-                    call_to_action: "url('./images/call.jpg')",
-                },
-            },
+      theme: {
+        extend: {
+          colors: {
+            primary: 'rgba(171, 239, 95, 0.5)',
+            secondary: 'rgb(171, 239, 95)',
+            dark: 'rgb(33, 33, 33)',
+            Middle: 'rgb(73, 73, 73)',
+            light: 'rgb(115, 115, 115)',
+            accent: 'rgb(106, 151, 57)',
+            body_neutral: 'rgb(51, 51, 51)',
+          },
+          fontFamily: {
+            Manrope: 'Manrope',
+          },
+          backgroundImage: {
+            leaf: "url('./images/leaf01.png')",
+            call_to_action: "url('./images/call.jpg')",
+          },
         },
+      },
     }
-</script>
+  </script>
 </head>
 
 <body class="font-Manrope">
-
+  <header>
+    <nav class="w-11/12 mx-auto">
+      <div class="navbar ">
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-2xl lg:text-3xl font-extrabold"><i
+              class="fa-solid fa-arrow-right -rotate-45 bg-secondary p-2 rounded-full mx-2 text-dark"></i>Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-light">
+            <li><a href="#"><Span class="text-middle font-extrabold ">Home</Span></a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="invisible lg:visible flex items-center gap-5">
+            <div class="text-xl">
+              <button><i class="fa-solid fa-magnifying-glass mr-3 border-2 border-gray-300 p-2 rounded-3xl bg-gray-100"></i></button>
+              <button><i class="fa-solid fa-cart-shopping border-2 border-gray-300 p-2 rounded-3xl bg-gray-100"></i></button>
+            </div>
+            <button class=" font-extrabold bg-secondary rounded-3xl text-xl px-6 py-3 text-dark">Book Consult<i
+                class="fa-solid fa-arrow-right -rotate-45 bg-black p-2 rounded-full mx-2 text-white"></i>
+            </button>
+          </div>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 text-light">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- hero section -->
+    <section>
+      <div class="hero mt-4 w-11/12 mx-auto">
+        <div class="hero-content flex flex-col">
+          <img src="./assets/banner.png" class="w-3/4 rounded-lg" />
+          <div>
+            <h1 class="lg:text-6xl lg:w-10/12 mx-auto text-3xl font-extrabold text-center text-dark">A barn house of this design has
+              a
+              striking appearance</h1>
+            <p class="py-6 lg:w-10/12 mx-auto text-center font-medium text-light">
+              The barn house captivates with its blend of rustic charm and modern sophistication,
+              featuring
+              weathered wood, sleek metal accents, and large windows that flood the space with natural
+              light.
+            </p>
+            <!-- hero button -->
+            <div class="text-center ">
+              <button class="font-bold bg-primary rounded-3xl text-xl w-11/12 py-2 lg:w-3/12 lg:py-3 lg:mx-auto text-dark">View
+                Details <i class="fa-solid fa-arrow-right -rotate-45 bg-secondary p-2 rounded-full mx-2"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
 </body>
-    
+
 </html>
